@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    height: 100vh;
+}
+
+.digital-clock {
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 5px solid #2d2d2d;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: "Hack";
+}
+
+.time {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hour,
+.min,
+.dot {
+    display: inline-block;
+    font-size: 13rem;
+}
+
+.min {
+    display: math;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.active {
+    color: white;
+}
+
+
+@media (max-width: 454px) {
+    .digital-clock {
+        width: 90%;
+    }
+
+    .hour,
+    .min,
+    .dot {
+        font-size: 6rem;
+    }
+
+    .week{
+        margin-right: auto;
+    }
+}
